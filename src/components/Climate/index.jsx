@@ -14,7 +14,7 @@ const Climate = ({ temperature, humidity}) => {
 
       <div className = "climate__content">
         <div className = "climate__temperature">{temp} &deg;C</div>
-        <div className = "climate__humidity">{humidity} &nbsp;%</div>
+        <div className = "climate__humidity">Humidity {humidity} &nbsp;%</div>
       </div>
 
       <div className = "climate__controls">

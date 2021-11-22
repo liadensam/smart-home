@@ -8,17 +8,17 @@ const Blinds = ({ state }) => {
   const [stateBlinds, setStateBlinds] = useState(state)
 
   const openState = () => {
-    setStateBlinds(stateBlinds)
+    setStateBlinds("open")
   }
 
   const closedState = () => {
-    setStateBlinds(!stateBlinds)
+    setStateBlinds("close")
   }
 
   return (
     <div className = "blinds">
       <div className = "blinds__icon">
-        <img src={stateBlinds ? blindsOpen : blindsClosed} alt={stateBlinds ? 'zaluzie otevrene' : 'zaluzie zavrene'} />
+        <img src={stateBlinds === "open" ? blindsOpen : blindsClosed} alt={stateBlinds ? 'zaluzie otevrene' : 'zaluzie zavrene'} />
       </div>
 
       <div className = "blinds__name">Žaluzie
@@ -26,9 +26,9 @@ const Blinds = ({ state }) => {
 
       <div className = "blinds__controls">
         
-        <button className = { stateBlinds ? "button button--active" : "button"} onClick = {openState}> Otevřeno </button>
+        <button className = { stateBlinds === "open" ? "button button--active" : "button"} onClick = {openState}> Otevřeno </button>
 
-        <button className = { stateBlinds ? "button" : "button button--active"} onClick = {closedState}> Zavřeno </button>
+        <button className = { stateBlinds === "open" ? "button" : "button button--active"} onClick = {closedState}> Zavřeno </button>
 
 
       </div>
@@ -39,3 +39,35 @@ const Blinds = ({ state }) => {
 }
 
 export default Blinds;
+
+
+//solution with boolean
+
+// const Blinds = ({ state }) => {
+
+//   const [stateBlinds, setStateBlinds] = useState(state === "open")
+
+//   const changeBlindState = () => {
+//     setStateBlinds(!stateBlinds)
+//   }
+
+//   return (
+//     <div className = "blinds">
+//       <div className = "blinds__icon">
+//         <img src={stateBlinds ? blindsOpen : blindsClosed} alt={stateBlinds ? 'zaluzie otevrene' : 'zaluzie zavrene'} />
+//       </div>
+
+//       <div className = "blinds__name">Žaluzie
+//       </div>
+
+//       <div className = "blinds__controls">
+        
+//         <button className = { stateBlinds ? "button button--active" : "button"} onClick = {openState}> Otevřeno </button>
+
+//         <button className = { stateBlinds ? "button" : "button button--active"} onClick = {closedState}> Zavřeno </button>
+
+
+//       </div>
+
+//     </div>
+//   )

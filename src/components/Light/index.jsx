@@ -4,7 +4,7 @@ import lightOn from './img/light-on.svg'
 import lightOff from './img/light-off.svg'
 
 const Light = ({ name, state }) => {
-  const [turnOn, setTurnOn] = useState(state)
+  const [turnOn, setTurnOn] = useState(state === "on")
 
   const lightSwitch = () => {
     setTurnOn(!turnOn)
