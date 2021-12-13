@@ -12,7 +12,7 @@ import Dashboard from './components/Dashboard'
 const App = () => (
 
     <div className = "container">
-      <Header title = "Smart home dashboard" />
+      <Header title = "Smart home" />
       <Dashboard data = {smartHomeData} />
     </div>
     
