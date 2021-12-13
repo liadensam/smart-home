@@ -13,7 +13,7 @@ const Light = ({ name, state }) => {
   return (
     <div className = "light" onClick = {lightSwitch}>
         <div className = "light__icon">
-          <img src={turnOn ? lightOn : lightOff} alt={turnOn ? 'Zapnutá žárovka' : 'Vypnutá žárovka'} />
+          <img src={turnOn ? lightOn : lightOff} alt={turnOn ? 'light on' : 'light off'} />
           <div className = "light__name"> {name} </div>
         </div>
     </div>

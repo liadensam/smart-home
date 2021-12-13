@@ -1,19 +1,19 @@
 export const smartHomeData = {
 	lights: [
 		{
-			name: 'Obývací pokoj',
+			name: 'Living room',
 			state: 'off',
 		},
 		{
-			name: 'Ložnice',
+			name: 'Bedroom',
 			state: 'on',
 		},
 		{
-			name: 'Kuchyně',
+			name: 'Kitchen',
 			state: 'on',
 		},
 		{
-			name: 'Chodba',
+			name: 'Hall',
 			state: 'off',
 		},
 	],
