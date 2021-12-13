@@ -17,3 +17,31 @@ In this Guide you will explore the fundamental aspects of React.Javascript/React
 - State control with Forms
 - Effects
 - React Router
+
+## Smart Home
+
+I created a web app that uses a lot of useState so it can switch between on and off.
+
+- [Live site]()
+- [GitHub Repository](https://github.com/liadensam/smart-home)
+
+## Name Day and Current Time
+
+I have been playing with the nanem day API as in Czech we celebrate name days, so at the top it shows who has a name day today and then you can input a name and see if it is in the API (Czech names only) or jut does not exist there. You can try for example: Jana, Honza, Anna, Lucie. It is displayed just together as four digit number, but the first numbers two are day, the second two are month. Then just a city selector and then you can see a current time in a specific location and I display first a different location.
+
+- [Live site](https://name-days-and-current-time.netlify.app/)
+- [GitHub Repository](https://github.com/liadensam/name-days)
+
+## Exchange Currency Rate
+
+Currency exchange Rate, three currencies.
+
+- [Live site](https://exchange-currency-rate.netlify.app/)
+- [GitHub Repository](https://github.com/liadensam/exchange-rates)
+
+## Movie Screen
+
+I created a movie screen, just played with styles and working with props and mapping.
+
+- [Live site](https://movie-screen-ing.netlify.app/)
+- [GitHub Repository](https://github.com/liadensam/movie-screen)
