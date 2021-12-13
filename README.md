@@ -22,7 +22,7 @@ In this Guide you will explore the fundamental aspects of React.Javascript/React
 
 I created a web app that uses a lot of useState so it can switch between on and off.
 
-- [Live site]()
+- [Live site](https://smart-home-dashboard.netlify.app/)
 - [GitHub Repository](https://github.com/liadensam/smart-home)
 
 ## Name Day and Current Time
